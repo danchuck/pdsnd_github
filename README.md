@@ -14,5 +14,5 @@ new_york_city.csv
 washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+1. piRSquared for explaining df.loc() method (https://stackoverflow.com/questions/43772362/how-to-print-a-specific-row-of-a-pandas-dataframe)
+2. Udacity Programming for Data Science Nanodegree course material.
