@@ -17,7 +17,7 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    city = 1
+    city = 0
     while city != 'chicago' and city != 'washington' and city != 'new york city':
         city = input('Enter city name (Chicago, New York City, or Washington) to explore its data: ').lower()
         if city != 'chicago' and city != 'washington' and city != 'new york city':
@@ -25,7 +25,7 @@ def get_filters():
 
     # get user input for month (all, january, february, ... , june)
     month_list = ['all', 'january', 'february', 'march', 'april', 'may', 'june']
-    month = 1
+    month = 0
     while month not in month_list:
         month = input('Which month, from January - June would you like to fliter by? Or choose "all": ').lower()
         if month not in month_list:
@@ -33,7 +33,7 @@ def get_filters():
     
     # get user input for day of week (all, monday, tuesday, ... sunday)
     days = ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
-    day = 1
+    day = 0
     while day not in days:
         day = input('Which day of the week would you like to fliter by? Or choose "all": ').lower()
         if day not in days:
@@ -108,8 +108,8 @@ def station_stats(df):
     print('Most common end station: {}'.format(top_es))
 
     # display most frequent combination of start station and end station trip
-    start_end = (df['Start Station'] + ', ' + df['End Station']).mode()[0]
-    print('Most common start/end route: {}'.format(start_end))
+    top_start_end = (df['Start Station'] + ', ' + df['End Station']).mode()[0]
+    print('Most common start/end route: {}'.format(top_start_end))
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
