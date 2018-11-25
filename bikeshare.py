@@ -165,7 +165,10 @@ def user_stats(df):
     print('-'*40)
 
 def raw_data(df):
-    """ Allows user to view raw entries for selected data, 5 lines at a time """
+    """ 
+    Allows user to view raw entries for selected data, 5 lines at a time. User can see additional lines
+    by pressing enter. 'No' or 'n' will exit the raw data function.
+    """
     
     df = df.drop(['month', 'day_of_week', 'hour_of_day', 'duration'], axis=1)
     df = df.reset_index()
