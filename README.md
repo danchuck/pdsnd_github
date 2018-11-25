@@ -5,7 +5,7 @@ Created November 24, 2018.
 Analyzing bike share data for Chicago, New York, and Washington.
 
 ### Description
-Describe what your project is about and what it does
+Take user input to display data and statistics from six months of bike share rental data from Chicago, New York City, and Washington D.C. Displays rental time stats, rental station stats, trip duration stats, user info, and raw data if requested.
 
 ### Files used
 Include the files used
