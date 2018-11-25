@@ -1,8 +1,8 @@
 ### Date created
-Include the date you created this project and README file.
+Created November 24, 2018.
 
 ### Project Title
-Replace the Project Title
+Analyzing bike share data for Chicago, New York, and Washington.
 
 ### Description
 Describe what your project is about and what it does
